@@ -3,10 +3,6 @@
 
 int main()
 {
-	// pid_t p;
-	// p = fork();
-	//printf("Hello %d\n", p);
-
 	fork();
 	printf("Hello \n");
 }
@@ -39,4 +35,6 @@ fork() return ID:
 	0  	for child
 	+ve for parent
 	-ve for child
+
+	see in fork_2.c
 */
