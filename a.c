@@ -219,17 +219,73 @@
 // //20480
 
 
-int fun(int n) {
-    int i,j,sum=0;
-    for (i=1; i<=n; i++) {
-        for(j=i; j<=i; j++){
-            sum = sum+j;
-        }
-    }
-    return sum;
-}
+// int fun(int n) {
+//     int i,j,sum=0;
+//     for (i=1; i<=n; i++) {
+//         for(j=i; j<=i; j++){
+//             sum = sum+j;
+//         }
+//     }
+//     return sum;
+// }
+
+// int main() {
+//     printf("%d",fun(5));
+//     return 0;
+// }
+
+
+
+// int main() {
+    
+//     int c, n, search,
+//     array[100];
+//     scanf("%d",&n); //number of elements in the array
+
+//     for (c = 0; c < n; c++) {
+//         scanf("%d",&array[c]);
+//     }
+
+//     scanf("%d", &search); //The element to search is read from test case.
+
+//     int l=0;
+//     int r=n-1;
+//     int pos = 0;
+
+//     while(l <= r) {
+//         int mid = (l+r) / 2;
+
+//         if (array[mid] == search) {
+//             pos = mid + 1;
+//             break;
+//         }
+
+//         else if (array[mid] < search)
+//             l = mid + 1;
+//         else
+//             r = mid - 1;
+//     }
+
+
+//     if (pos != 0)
+//         printf("%d found at location %d.\n", search, pos);
+//     else
+//         printf("Not found! %d isn't present in the list.\n", search);
+
+
+//     return 0;
+// }
+
+
+
 
 int main() {
-    printf("%d",fun(5));
-    return 0;
+int a;
+int arr[5] = {1, 2, 3, 4,5};
+arr[1] = ++arr[1];
+a=arr[1]++;
+arr[1] = arr[a++];
+printf("%d,%d",a,arr[1]);
+return 0;
+
 }
