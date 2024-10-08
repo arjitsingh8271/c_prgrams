@@ -279,13 +279,62 @@
 
 
 
-int main() {
-int a;
-int arr[5] = {1, 2, 3, 4,5};
-arr[1] = ++arr[1];
-a=arr[1]++;
-arr[1] = arr[a++];
-printf("%d,%d",a,arr[1]);
-return 0;
+// int main() {
+// int a;
+// int arr[5] = {1, 2, 3, 4,5};
+// arr[1] = ++arr[1];
+// a=arr[1]++;
+// arr[1] = arr[a++];
+// printf("%d,%d",a,arr[1]);
+// return 0;
 
+// }
+
+
+// int main()
+
+// {
+// short num[3][2]={2,5,11,17,23,28};
+// printf("%d,%d", *(num+2)[0],* *(num+1));
+// return 0;
+
+// }
+// //23,11
+
+
+// // Assume size of an integer and a pointer is 4 bytes. What is the output?
+// #define A 5
+// #define B 8
+// #define C 2
+
+// int main()
+
+// {
+// int (*x)[A][B][C];
+// printf("%ld", sizeof(*x));
+// return 0;
+// }
+// //320
+
+
+
+// int main()
+// {
+// char *s = "programming";
+// char *p=s;
+// printf("%c,%c", *(p + 3), s[3]);
+// return 0;
+// }
+// //g,g
+
+
+int main() {
+    unsigned int x[4][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
+        {10, 11, 12}
+    };
+
+    printf("%ls, %ls, %ls", x+3, *(x+3), *(x+2)+3);
 }
